@@ -1,0 +1,41 @@
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+body {
+  margin: 0;
+  background: #f6f5ec;
+  color: #24392e;
+  font: 1rem/1.55 system-ui, sans-serif;
+}
+
+main {
+  width: min(100% - 2rem, 36rem);
+  margin: clamp(2rem, 8vw, 5rem) auto;
+}
+
+header, .controls, .list-heading, li {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+header, .list-heading, li { justify-content: space-between; }
+header { flex-wrap: wrap; }
+h1 { margin: 0; font-size: clamp(1.55rem, 5vw, 2.35rem); letter-spacing: -.025em; }
+h2 { margin: 0; font-size: 1.1rem; }
+#status { min-height: 1.55em; color: #495e50; }
+#status.error { color: #922e26; }
+#shopping { padding: clamp(1rem, 4vw, 1.65rem); background: #fff; border: 1px solid #d7dfd7; border-radius: 1rem; }
+label { display: block; margin-bottom: .35rem; font-weight: 650; }
+.list-heading, #purchased { margin-top: 1.5rem; }
+
+button, input { font: inherit; min-height: 2.75rem; border: 1px solid #71877a; border-radius: .55rem; }
+button { padding: .45rem .85rem; background: #24573e; color: #fff; white-space: nowrap; cursor: pointer; font-weight: 650; }
+button.secondary { background: #f0f5ee; color: #24392e; }
+button:disabled { opacity: .55; cursor: default; }
+button:focus-visible, input:focus-visible { outline: 3px solid #39765a; outline-offset: 3px; }
+input { flex: 1; min-width: 0; padding: .45rem .65rem; background: #fff; color: inherit; }
+ul { margin: .4rem 0 0; padding: 0; list-style: none; }
+li { padding: .5rem 0; border-bottom: 1px solid #e0e7df; overflow-wrap: anywhere; }
+#purchased li { color: #495e50; }
+#empty { margin: .45rem 0 0; color: #495e50; }
