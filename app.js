@@ -1,5 +1,10 @@
-// Firebase のウェブアプリ設定を入れると共有モードになります。
-const firebaseConfig = null;
+// Firebase コンソールで発行されたブラウザ用設定です。
+const firebaseConfig = {
+  apiKey: "AIzaSyBJ_y-CfIOTJkBdpUlfT7HG5e8WfuJLXqk",
+  authDomain: "family-shopping-a21a9.firebaseapp.com",
+  projectId: "family-shopping-a21a9",
+  appId: "1:328559928583:web:c00e715fdd61756e2651a2"
+};
 
 const ui = Object.fromEntries(
   ["status", "login", "logout", "shopping", "add-form", "item-name", "add",
